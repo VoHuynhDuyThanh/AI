@@ -88,42 +88,6 @@ def main():
     # Hiển thị biểu đồ trong Streamlit
     st.pyplot(fig)
 
-# def main():
-#     # Create a VideoCapture object to capture video from the camera
-#     cap = cv2.VideoCapture(0)
-#
-#     # Set the frame size
-#     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-#     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
-#
-#     # Run the application
-#     stop_button_pressed = False  # Track if the stop button is pressed
-#     while True:
-#         # Read the current frame from the camera
-#         ret, frame = cap.read()
-#
-#         # Convert the frame from BGR to RGB
-#         frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-#
-#         # Convert the frame to PIL Image format
-#         pil_image = Image.fromarray(frame_rgb)
-#
-#         # Preprocess the image and make predictions
-#         processed_image = preprocess_image(pil_image)
-#         predicted_class, confidence_scores = predict_object(processed_image)
-#
-#         # Display the current frame and predicted class label
-#         st.image(frame_rgb, channels='RGB')
-#         st.write("Predicted class:", predicted_class)
-#
-#         # Check for stop signal
-#         if st.button('Stop', key='stop_button_unique'):
-#             stop_button_pressed = True
-#             break
-#
-#     # Release the VideoCapture object
-#     cap.release()
-
 with tab1:
     #Lựa chọn giữa 2 phương pháp
     selected = st.radio(
