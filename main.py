@@ -4,7 +4,6 @@ import numpy as np
 from tensorflow.keras.models import load_model
 import time
 import matplotlib.pyplot as plt
-import cv2
 
 # Set page title
 st.title("Disease Detection In Corn")

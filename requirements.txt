@@ -1,2 +1,6 @@
 tensorflow==2.7.0
 keras==2.7.0
+matplotlib==3.7.1
+numpy==1.23.5
+pillow==9.5.0
+streamlit==1.22.0
